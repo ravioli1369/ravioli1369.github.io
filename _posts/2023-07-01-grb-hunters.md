@@ -34,8 +34,18 @@ in the data from the Cadmium Zinc Telluride Imager (CZTI) onboard ISRO's AstroSa
     </a>
   </div>
   <div class="col-sm mt-3 mt-md-0">
-        The logic was implemented in a python script that can be used to analyse the data from CZTI.
+        The logic was implemented in a python script that can be used to analyse the data from CZTI. On the left is the repository containing all the code developed for the project. 
     </div>
 </div><br>
+
+<div class="post">
+
+  <header class="post-header">
+    Here is the report documenting the theory, logic and implementation of the project:
+ <a href="{{'assets/pdf/grbhunters.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
+  </header>
+  <embed src="{{'assets/pdf/grbhunters.pdf' | relative_url}}" width="100%" height="1000px" type="application/pdf">
+
+</div>
 
 
