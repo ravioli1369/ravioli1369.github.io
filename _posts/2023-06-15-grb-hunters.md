@@ -3,7 +3,7 @@ layout: post
 title:  'faintest of the brightest: grb hunters'
 date:   2023-07-01
 description: a blog post detailing the grb hunters project
-tags: grb astronomy
+tags: grb astronomy project
 categories: 
 ---
 

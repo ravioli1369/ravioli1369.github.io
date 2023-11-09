@@ -3,7 +3,7 @@ layout: post
 title:  'the basics'
 date:   2022-10-20
 description: learn the absolute basics of photography - light and its interactions
-tags: photography
+tags: photography tutorial
 categories: 
 ---
 
@@ -39,7 +39,7 @@ Ever wondered how or why some photos have a very blurred background with circula
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe width="444" height="250" src="https://www.youtube.com/embed/_lZvF-YyP0s?si=tR0uuyyE7p6A9iia&amp;start=310" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/_lZvF-YyP0s?si=tR0uuyyE7p6A9iia&amp;start=310" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         Here's a nice video that shows how changes in the aperture affect the depth of field produced by the lens.
@@ -97,7 +97,7 @@ The usual way of measuring the shutter speed is in terms of fractions of a secon
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe width="444" height="250" src="https://www.youtube.com/embed/CmjeCchGRQo?si=976aDkaigSkdDyz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/CmjeCchGRQo?si=976aDkaigSkdDyz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         Here's a good video that shows how the shutter of a camera actually works.
