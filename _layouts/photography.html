@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang }}">
+
+  <!-- Head -->
+  <head>
+    {%- if page.redirect -%}
+        <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+    {%- endif -%}
+    {% include head.html %}
+    <style>
+        .masthead {
+            position: relative;
+            min-width: 100%;
+            height: auto;
+            max-height: 30rem;
+            padding: 0 0;
+            background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), url('../../assets/img/{{ page.bg }}');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .masthead h1, .masthead .h1 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.8rem;
+            padding: 0.5rem 0;
+            background: rgba(242, 242, 248, 0.85);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+                    background-clip: text;
+        }
+        .masthead h2, .masthead .h2 {
+            max-width: 20rem;
+            font-size: 1rem;
+            color: rgba(248, 248, 242, 0.7);
+        }
+        @media (min-width: 768px) {
+            .masthead h1, .masthead .h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+            }
+        }
+        @media (min-width: 992px) {
+            .masthead {
+            height: 100vh;
+            padding: 0;
+            }
+            .masthead h1, .masthead .h1 {
+            font-size: 6.5rem;
+            line-height: 6.5rem;
+            letter-spacing: 0.8rem;
+            }
+            .masthead h2, .masthead .h2 {
+            max-width: 30rem;
+            font-size: 1.25rem;
+            }
+        }
+    </style>
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
+    {%- include header.html %}
+
+    <!-- Content -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 style="letter-spacing: 0.6rem">
+                        <b>{{ page.title }}</b>
+                    </h1>
+                    <h2 class="mx-auto mt-2 mb-5"> {{ page.description }} </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- JavaScripts -->
+    {% include scripts/jquery.html %}
+    {% include scripts/bootstrap.html %}
+    {% include scripts/masonry.html %}
+    {% include scripts/misc.html %}
+    {% include scripts/badges.html %}
+    {% include scripts/mathjax.html %}
+    {% include scripts/analytics.html %}
+    {% include scripts/progressBar.html %}
+    {% include scripts/wechatModal.html %}
+  </body>
+</html>

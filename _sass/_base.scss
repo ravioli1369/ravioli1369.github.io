@@ -1059,3 +1059,32 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+.text-center {
+  text-align: center !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1% 4%;
+  padding: 8%;
+}
+
+.grid-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+@media (max-width: 992px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
