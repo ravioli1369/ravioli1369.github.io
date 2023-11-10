@@ -5,6 +5,7 @@ date:   2022-10-20
 description: learn the absolute basics of photography - light and its interactions
 tags: photography tutorial
 categories: 
+giscus_comments: true
 ---
 
 # **Playing with light**

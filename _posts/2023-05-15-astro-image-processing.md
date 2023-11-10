@@ -5,6 +5,7 @@ date:   2023-05-15
 description: learn some basic processing techniques for deep sky images - using Siril.
 tags: photography astrophotography editing tutorial
 categories: 
+giscus_comments: true
 ---
 
 # **Using Siril**

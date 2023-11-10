@@ -5,6 +5,7 @@ date:   2023-07-01
 description: a blog post detailing the grb hunters project - a project to detect gamma ray bursts in the data from the czti instrument onboard astrosat. <i>Krittika Summer Projects 2023</i>
 tags: grb astronomy project
 categories: 
+giscus_comments: true
 ---
 
 [Gamma-Ray Bursts](https://imagine.gsfc.nasa.gov/science/objects/bursts1.html) (GRBs) are fascinating astronomical phenomena that have
@@ -29,8 +30,8 @@ in the data from the Cadmium Zinc Telluride Imager (CZTI) onboard ISRO's AstroSa
 <div class="row mt-3">
   <div class="repo p-2 text-center">
     <a href="https://github.com/ravioli1369/grbhunters">
-      <img class="repo-img-light w-100" alt="ravioli1369/grbhunters" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=grbhunters&theme={{ site.repo_theme_light }}&show_owner=true">
-      <img class="repo-img-dark w-100" alt="ravioli1369/grbhunters" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=grbhunters&theme={{ site.repo_theme_dark }}&show_owner=true">
+      <img class="repo-img-light w-100" alt="ravioli1369/grbhunters" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=grbhunters&theme={{ site.repo_theme_light }}">
+      <img class="repo-img-dark w-100" alt="ravioli1369/grbhunters" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=grbhunters&theme={{ site.repo_theme_dark }}">
     </a>
   </div>
   <div class="col-sm mt-3 mt-md-0">
@@ -43,7 +44,7 @@ in the data from the Cadmium Zinc Telluride Imager (CZTI) onboard ISRO's AstroSa
   <header class="post-header">
     Here is the report documenting the theory, logic and implementation of the project:
  <a href="{{'assets/pdf/grbhunters.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
-  </header>
+  </header><br>
   <embed src="{{'assets/pdf/grbhunters.pdf' | relative_url}}" width="100%" height="1000px" type="application/pdf">
 
 </div>
