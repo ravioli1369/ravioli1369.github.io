@@ -16,4 +16,6 @@ children:
       permalink: /random/
     - title: events
       permalink: /events/
+    - title: astrophotography
+      permalink: /astrophotography/
 ---
