@@ -1102,7 +1102,7 @@ nav[data-toggle="toc"] {
 }
 
 .grid-item:hover .image {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .grid-item:hover .middle {
@@ -1114,7 +1114,7 @@ nav[data-toggle="toc"] {
 }
 
 .text {
-  color: white;
+  color: var(--global-text-color);
   font-size: 16px;
   padding: 16px 32px;
 }
