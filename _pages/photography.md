@@ -10,8 +10,6 @@ children:
       permalink: /portrait/
     - title: nature
       permalink: /nature/
-    - title: landscape
-      permalink: /landscape/
     - title: random
       permalink: /random/
     - title: events
