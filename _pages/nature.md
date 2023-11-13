@@ -173,7 +173,7 @@ nav: false
     <div class="grid-item span-2-columns">
         <img src="../../assets/img/nature/nature-28.jpeg" alt="Image 28" class="image">
         <div class="middle">
-            <div class="text">Nikon D7500<br>50mm ƒ/1.8 reversed<br>1/100<br>ISO 500</div>
+            <div class="text">Nikon D7500<br>35mm ƒ/1.8 reversed<br>1/100<br>ISO 500</div>
         </div>
     </div>
     <div class="grid-item">
