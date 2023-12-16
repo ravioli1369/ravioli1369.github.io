@@ -56,11 +56,13 @@ For simplicity, I have taken $$T=2\pi$$. The slider below can be used to change 
     <script src="{{ '/assets/js/fourier-transform/discrete-fourier-transform.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/fourier-transform/complex-number.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/fourier-transform/functions.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/fourier-transform/sawtooth.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/fourier-transform/batman.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/fourier-transform/test.js' | relative_url }}"></script>
 </div>
 
 <br>
 
 Now that we can see how epicycles and the discrete Fourier transform work, we can use them to draw a shape. The shape is represented as a series of ($$x$$, $$y$$) points. The points are then fed into the discrete Fourier transform, and we get two transforms as output, one for the $$x$$ values and one for the $$y$$ values. We can then use the transforms to generate two sets of epicycles.
 
+<div class="col-sm-3" id="batman" style="position: relative; left: -2vw;"></div>
 

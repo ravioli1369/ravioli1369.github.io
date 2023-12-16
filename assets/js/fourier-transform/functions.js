@@ -1,28 +1,28 @@
-function epiCycles(x, y, rotation, fourier, time) {
+function epiCycles(x, y, rotation, fourier, time, sketch) {
     for (let i = 0; i < fourier.length; i++) {
         let prevx = x;
         let prevy = y;
         let freq = i;
         let radius = fourier[i].magnitude();
         let phase = fourier[i].phase();
-        x += radius * cos(freq * time + phase + rotation);
-        y += radius * sin(freq * time + phase + rotation);
+        x += radius * Math.cos(freq * time + phase + rotation);
+        y += radius * Math.sin(freq * time + phase + rotation);
 
-        stroke(
+        sketch.stroke(
             getComputedStyle(document.documentElement).getPropertyValue(
                 "--global-text-color"
             ) + "50"
         );
-        noFill();
-        ellipse(prevx, prevy, radius * 2);
-        stroke(
+        sketch.noFill();
+        sketch.ellipse(prevx, prevy, radius * 2);
+        sketch.stroke(
             getComputedStyle(document.documentElement).getPropertyValue(
                 "--global-text-color"
             )
         );
-        line(prevx, prevy, x, y);
+        sketch.line(prevx, prevy, x, y);
     }
-    return createVector(x, y);
+    return sketch.createVector(x, y);
 }
 
 function linspace(startValue, stopValue, cardinality) {
