@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Drawing with Fourier Transforms"
+title: "drawing with fourier transforms"
 date: 2023-12-15
-description: "Visualising the Fourier Transform by deconstructing and reconstructing an input signal using epicycles."
+description: "visualising the fourier transform by deconstructing and reconstructing an input signal using epicycles."
 tags: project
 categories:
-giscus_comments: false
+giscus_comments: true
 ---
 
 ## The Fourier Transform
@@ -73,3 +73,11 @@ We've seen how individual fourier tranforms of $$x$$ and $$y$$ can be used to dr
 Here you can give it a try yourself. Draw a shape by clicking on the canvas, and watch the epicycle draw it. Do keep in mind that the shape should be closed, to avoid any discontinuities in the output drawing.
 
 <div class="col-sm-3" id="user" style="position: relative; left: -2vw;"></div>
+
+<br>
+
+## References
+
+* [3Blue1Brown](https://www.youtube.com/watch?v=r6sGWTCMz2k)
+* [The Coding Train](https://www.youtube.com/watch?v=Mm2eYfj0SgA)
+* [Wikipedia](https://en.wikipedia.org/wiki/Fourier_transform)

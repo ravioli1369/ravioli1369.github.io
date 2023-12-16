@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  'Fermi Gamma-Ray Bursts: Statistical Analysis and Coverage Estimation with GIT'
+title:  'fermi gamma ray bursts: statistical analysis and coverage estimation with GIT'
 date:   2023-11-27
-description: 'PH303: Supervised Learning Project, under Prof. Varun Bhalerao, IIT Bombay'
+description: 'PH303: supervised learning project, under Prof. Varun Bhalerao, IIT Bombay'
 tags: grb astronomy project
 categories: 
 giscus_comments: true
