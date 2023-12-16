@@ -1,0 +1,1 @@
+function discreteFourierTransform(e){const t=e.length;let r=[];for(let n=0;n<t;n++){let o=new ComplexNumber(0,0);for(let r=0;r<t;r++){const l=2*Math.PI*n*r/t,m=new ComplexNumber(Math.cos(l),-Math.sin(l)).multiply(e[r]);o=o.add(m)}o=o.divide(new ComplexNumber(t,0)),r[n]=o}return r}
