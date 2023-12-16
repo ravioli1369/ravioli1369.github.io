@@ -1,4 +1,4 @@
-var sawtooth = function (sketch) {
+var sketch_sawtooth = function (sketch) {
     let time = 0;
     let path = { x: [], y: [] };
     let slider, canvas;
@@ -177,5 +177,108 @@ var sketch_batman = function (sketch) {
     };
 };
 
-new p5(sawtooth, "sawtooth");
+var sketch_user = function (sketch) {
+    let USERINPUT = [];
+    let FOURIER = false;
+    let path = { x: [], y: [] };
+    let time = 0;
+    let fourier, canvas;
+    sketch.setup = function () {
+        canvas = sketch.createCanvas(
+            0.69 * sketch.windowWidth,
+            0.69 * sketch.windowHeight
+        );
+        sketch.background(
+            getComputedStyle(document.documentElement).getPropertyValue(
+                "--global-bg-color"
+            )
+        );
+        sketch.textAlign(sketch.CENTER);
+        sketch.textSize(64);
+        sketch.fill(
+            getComputedStyle(document.documentElement).getPropertyValue(
+                "--global-text-color"
+            )
+        );
+        sketch.textFont("inherit");
+        sketch.text("draw something", canvas.width / 2, canvas.height / 2);
+        // attach to DOM with id=user
+        canvas.parent("user");
+    };
+
+    sketch.draw = function () {
+        if (sketch.mouseIsPressed == true) {
+            sketch.background(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                    "--global-bg-color"
+                )
+            );
+            path = { x: [], y: [] };
+            time = 0;
+            USERINPUT.push(
+                new ComplexNumber(
+                    sketch.mouseX - canvas.width / 2,
+                    sketch.mouseY - canvas.height / 2
+                )
+            );
+            FOURIER = true;
+            sketch.stroke(253, 253, 150);
+            sketch.noFill();
+            sketch.beginShape();
+            for (let i = 0; i < USERINPUT.length; i++) {
+                sketch.vertex(
+                    USERINPUT[i].real + canvas.width / 2,
+                    USERINPUT[i].imaginary + canvas.height / 2
+                );
+            }
+            sketch.endShape();
+            fourier = discreteFourierTransform(USERINPUT);
+        }
+
+        if (FOURIER == true && sketch.mouseIsPressed == false) {
+            sketch.background(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                    "--global-bg-color"
+                )
+            );
+            USERINPUT = [];
+            let V = epiCycles(
+                canvas.width / 2,
+                canvas.height / 2,
+                0,
+                fourier,
+                time,
+                sketch
+            );
+            path.x.unshift(V.x);
+            path.y.unshift(V.y);
+            sketch.beginShape();
+            sketch.stroke(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                    "--global-text-color"
+                )
+            );
+            sketch.noFill();
+            for (let i = 0; i < path.x.length; i++) {
+                sketch.vertex(path.x[i], path.y[i]);
+            }
+            sketch.endShape();
+            const dt = (2 * Math.PI) / fourier.length;
+            time += dt;
+            if (path.x.length > 1000) {
+                path.x.pop();
+                path.y.pop();
+            }
+        }
+    };
+    sketch.windowResized = function () {
+        sketch.resizeCanvas(
+            0.69 * sketch.windowWidth,
+            0.69 * sketch.windowHeight
+        );
+    };
+};
+
+new p5(sketch_sawtooth, "sawtooth");
 new p5(sketch_batman, "batman");
+new p5(sketch_user, "user");

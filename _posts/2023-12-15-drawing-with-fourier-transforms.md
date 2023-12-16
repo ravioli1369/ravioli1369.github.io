@@ -66,3 +66,10 @@ Now that we can see how epicycles and the discrete Fourier transform work, we ca
 
 <div class="col-sm-3" id="batman" style="position: relative; left: -2vw;"></div>
 
+<br>
+
+We've seen how individual fourier tranforms of $$x$$ and $$y$$ can be used to draw shapes, but since the fourier transform represents a complex number, it is possible to use only one epicycle to draw a shape. The fourier transform of $$x$$ and $$y$$ can be combined into a single fourier transform containing the ($$x$$, $$y$$) information in the real and imaginary parts respectively. This fourier transform can then be used to generate a single set of epicycles.
+
+Here you can give it a try yourself. Draw a shape by clicking on the canvas, and watch the epicycle draw it. Do keep in mind that the shape should be closed, to avoid any discontinuities in the output drawing.
+
+<div class="col-sm-3" id="user" style="position: relative; left: -2vw;"></div>
