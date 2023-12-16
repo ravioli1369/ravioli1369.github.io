@@ -57,7 +57,7 @@ For simplicity, I have taken $$T=2\pi$$. The slider below can be used to change 
     <script src="{{ '/assets/js/fourier-transform/complex-number.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/fourier-transform/functions.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/fourier-transform/batman.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/fourier-transform/test.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/fourier-transform/fourier-transform-drawing.js' | relative_url }}"></script>
 </div>
 
 <br>

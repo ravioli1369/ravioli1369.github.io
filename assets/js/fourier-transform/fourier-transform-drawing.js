@@ -96,8 +96,6 @@ var sawtooth = function (sketch) {
     };
 };
 
-new p5(sawtooth, "sawtooth");
-
 var sketch_batman = function (sketch) {
     let time = 0;
     let path = { x: [], y: [] };
@@ -179,4 +177,5 @@ var sketch_batman = function (sketch) {
     };
 };
 
+new p5(sawtooth, "sawtooth");
 new p5(sketch_batman, "batman");
