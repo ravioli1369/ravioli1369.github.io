@@ -183,6 +183,19 @@ var sketch_user = function (sketch) {
     let path = { x: [], y: [] };
     let time = 0;
     let fourier, canvas;
+
+    sketch.validMouse = function () {
+        if (
+            sketch.mouseX > 0 &&
+            sketch.mouseX < canvas.width &&
+            sketch.mouseY > 0 &&
+            sketch.mouseY < canvas.height
+        ) {
+            return true;
+        }
+        return false;
+    };
+
     sketch.setup = function () {
         canvas = sketch.createCanvas(
             0.69 * sketch.windowWidth,
@@ -207,7 +220,7 @@ var sketch_user = function (sketch) {
     };
 
     sketch.draw = function () {
-        if (sketch.mouseIsPressed == true) {
+        if (sketch.mouseIsPressed == true && sketch.validMouse()) {
             sketch.background(
                 getComputedStyle(document.documentElement).getPropertyValue(
                     "--global-bg-color"
