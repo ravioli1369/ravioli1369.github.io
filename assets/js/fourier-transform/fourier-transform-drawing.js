@@ -222,7 +222,11 @@ var sketch_user = function (sketch) {
                 )
             );
             FOURIER = true;
-            sketch.stroke(253, 253, 150);
+            sketch.stroke(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                    "--global-theme-color"
+                )
+            );
             sketch.noFill();
             sketch.beginShape();
             for (let i = 0; i < USERINPUT.length; i++) {
