@@ -76,8 +76,21 @@ Here you can give it a try yourself. Draw a shape by clicking on the canvas, and
 
 <br>
 
-## References
+## References and Resources
 
-* [3Blue1Brown](https://www.youtube.com/watch?v=r6sGWTCMz2k)
-* [The Coding Train](https://www.youtube.com/watch?v=Mm2eYfj0SgA)
-* [Wikipedia](https://en.wikipedia.org/wiki/Fourier_transform)
+<div class="row mt-3">
+<div class="col-sm mt-3 mt-md-0">
+        <li> <a href="https://www.youtube.com/watch?v=r6sGWTCMz2k">3Blue1Brown</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=spUNpyF58BY">The Coding Train</a> </li>
+        <li> <a href="https://en.wikipedia.org/wiki/Fourier_transform">Wikipedia</a> </li>
+        <li> <a href="https://p5js.org/">p5.js</a> </li>
+    </div>
+  <div class="repo p-2 text-center">
+    <a href="https://github.com/ravioli1369/ft-drawings">
+      <img class="repo-img-light w-100" alt="ravioli1369/ft-drawings" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=ft-drawings&theme={{ site.repo_theme_light }}">
+      <img class="repo-img-dark w-100" alt="ravioli1369/ft-drawings" src="https://github-readme-stats.vercel.app/api/pin/?username=ravioli1369&repo=ft-drawings&theme={{ site.repo_theme_dark }}">
+    </a>
+  </div>
+  
+</div><br>
+
