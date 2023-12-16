@@ -8,10 +8,18 @@ function epiCycles(x, y, rotation, fourier, time) {
         x += radius * cos(freq * time + phase + rotation);
         y += radius * sin(freq * time + phase + rotation);
 
-        stroke(255, 100);
+        stroke(
+            getComputedStyle(document.documentElement).getPropertyValue(
+                "--global-text-color"
+            ) + "50"
+        );
         noFill();
         ellipse(prevx, prevy, radius * 2);
-        stroke(255);
+        stroke(
+            getComputedStyle(document.documentElement).getPropertyValue(
+                "--global-text-color"
+            )
+        );
         line(prevx, prevy, x, y);
     }
     return createVector(x, y);

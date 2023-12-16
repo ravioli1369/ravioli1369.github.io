@@ -3,18 +3,17 @@ let path = { x: [], y: [] };
 let slider;
 
 function setup() {
-    canvas = createCanvas(0.8 * screen.width, 0.8 * screen.height).center(
-        "horizontal"
-    );
     slider = createSlider(1, 10, 1);
-    slider.position(0.1 * screen.width, -0.07 * canvas.height, "relative");
-    html_slider = document.getElementById("slider-value");
-    html_slider.style.position = "relative";
-    html_slider.style.left = -0.35 * canvas.width + "px";
-    html_slider.style.top = -0.02 * canvas.height + "px";
+    canvas = createCanvas(0.69 * windowWidth, 0.69 * windowHeight);
+    html_slider_value = document.getElementById("slider-value");
+    html_slider_value.style.position = "relative";
+    html_slider_value.style.left = 0.2 * canvas.width + "px";
+    // attach to DOM with id=sawtooth
+    canvas.parent("sawtooth");
+    slider.parent("slider");
 }
 
-function sumofsines(n) {
+function sawtooth(n) {
     // returns fourier transform of (1/1)*sin(1*t) + (1/2)*sin(2*t) + ... + (1/n)*sin(n*t)
     let t = 0;
     let scale = 100;
@@ -36,8 +35,12 @@ function sumofsines(n) {
 }
 
 function draw() {
-    html_slider.innerHTML = "n = " + slider.value();
-    background(28, 28, 29);
+    html_slider_value.innerHTML = "N = " + slider.value();
+    background(
+        getComputedStyle(document.documentElement).getPropertyValue(
+            "--global-bg-color"
+        )
+    );
     const x_translate = canvas.width / 3;
     const y_translate = canvas.height / 2;
 
@@ -46,7 +49,7 @@ function draw() {
     let x = 0;
     let y = 0;
 
-    let fourier = sumofsines(slider.value());
+    let fourier = sawtooth(slider.value());
     let V = epiCycles(x, y, HALF_PI, fourier, time);
     path.x.unshift(V.x);
     path.y.unshift(V.y);
@@ -54,6 +57,11 @@ function draw() {
     translate(canvas.width / 4, 0);
     beginShape();
     noFill();
+    stroke(
+        getComputedStyle(document.documentElement).getPropertyValue(
+            "--global-text-color"
+        )
+    );
     for (let i = 0; i < path.y.length; i++) {
         vertex(i, path.y[i]);
     }
@@ -72,4 +80,11 @@ function draw() {
         path.x.pop();
         path.y.pop();
     }
+}
+
+function windowResized() {
+    resizeCanvas(0.69 * windowWidth, 0.69 * windowHeight);
+    html_slider_value = document.getElementById("slider-value");
+    html_slider_value.style.position = "relative";
+    html_slider_value.style.left = 0.2 * canvas.width + "px";
 }
