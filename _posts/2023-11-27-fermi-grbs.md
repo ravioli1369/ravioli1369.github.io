@@ -99,7 +99,7 @@ Detailed observations and analsyis of the coverage was posted on NASA's Gamma-ra
 
   <header class="post-header">
     Here is the report documenting complete results of the project:
- <a href="{{'assets/pdf/grbhunters.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
+ <a href="{{'assets/pdf/fermi_grbs.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
   </header><br>
   <embed src="{{'assets/pdf/fermi_grbs.pdf' | relative_url}}" width="100%" height="1000px" type="application/pdf">
 
